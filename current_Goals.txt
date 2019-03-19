@@ -1,0 +1,9 @@
+A form needs to be created
+      form must have a specific choice for each schema
+Each schema must have its own function
+Add specific search results for each Schema
+Add a way to call more than one schema at a time.
+Create a button that allows the user to download the xls version of the data
+Add bootstrap to the site
+Add instructions to the site
+Create output tables

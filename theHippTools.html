@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>test</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="myPull.js"></script>
+            <script type="text/javascript" src="xlsx.full.min.js"></script>
+            <script type="text/javascript" src="FileSaver.min.js"></script>
+      </head>
+      <body class="container-fluid" onload="checkMyCookies()">
+            <div class="row center">
+                  <header class="col text-center">
+                        Hippodrome Database tool
+                  </header>
+            </div>
+            <div class="row">
+                  <nav class="col text-center">
+                        <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="login.html">Login</a></li>
+                              <li><a href="help.html">Help</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                  </nav>
+            </div>
+
+            <main class=>
+
+                  <div class="row">
+
+                        <h1 id="instructions"></h1>
+                        <br>
+
+                  </div>
+                        <!-- <label for="table">Table:</label>
+                        <input type="text" id="mySchema" value=""required> -->
+
+                        <p id="myTest"></p>
+
+                        <!-- create a form -->
+                        <legend id="getTable">
+
+                              <h1 onclick="runTables()">Waiting</h1>
+                              <h1 onclick="getTables()">Get tables</h1>
+                              <ul id="databaseList">
+
+                              </ul>
+
+                        </legend>
+
+                              <h1 id="instructions"></h1>
+                              <br>
+                              <label for="Show Code">Show Code:</label>
+                              <input type="text" id="showCode" value="" required>
+                              <button type="button" name="button" onclick="get_Event_Info()">Get results</button>
+                              <button type="button" name="button" onclick="upLoad()">download</button>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+
+                  <div id="finalTable">
+                      <table class="table">
+                          <thead class="thead-dark">
+                            <tr id="finalHead">
+                                <th>Performance Code</th>
+                                <th>Date</th>
+                                <th>Show Time</th>
+                                <th>Performance year</th>
+                                <th>Tickets Sold</th>
+                                <th>Total</th>
+
+                            </tr>
+                          </thead>
+                          <tbody id="finalBody">
+
+                          </tbody>
+                          <tfoot class="thead-dark">
+                            <tr id="finalFoot">
+
+                            </tr>
+                          </tfoot>
+                      </table>
+                  </div>
+            </main>
+
+
+      </body>
+</html>

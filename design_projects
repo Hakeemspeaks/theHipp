@@ -1,0 +1,70 @@
+//
+//  main.cpp
+//  designClass
+//
+//  Created by User on 2/26/19.
+//  Copyright © 2019 User. All rights reserved.
+//
+//
+//#include <iostream>
+//
+//int main(int argc, const char * argv[]) {
+//    // insert code here...
+//    std::cout << "Hello, World!\n";
+//    return 0;
+//}
+
+#include <iostream>
+#include <limits>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+
+    cout << "For this compiler: " << endl;
+    cout << "integers are: " << __SIZEOF_INT__ << " bytes " << endl;
+    cout << "largest integer is " << INT_MAX << endl;
+    cout << "smallest integer is " << INT_MIN << endl;
+
+    cout << "Input two integer values " << endl;
+    cin >> i >> j;
+
+    cout << endl << "You entered the following values: " << endl;
+    cout << "integer: " << i << " " << j << endl;
+
+
+     int result = i * 10;
+     cout << "Your number times ten is " << result << endl;
+     result = i + j;
+     cout << "The sum of your number is " << result << endl;
+     result = i + j;
+     cout << "The product of your numbers is " << result << endl;
+    /*
+    int age;
+    int total = 0;
+    cout << "Please enter 10 ages:" << endl;
+    for (int i=0; i < 10; i++) {
+        cin >> age;
+        total = total + age;
+    }
+    cout << "average age is " << (float)total/10 << endl;
+    */
+
+//
+//    int tests[10];
+//    int test;
+//    int num_elems;
+//
+//    cout << "How many numbers? ";
+//    cin >> num_elems;
+//
+//    for (int i = 0; i < num_elems; i++) {
+//        cout << "Please type a number: ";
+//        cin >> test;
+//        tests[i] = test;
+//    }
+
+    return 0;
+
+}
